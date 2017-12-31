@@ -1,0 +1,97 @@
+<!--Section: Contact v.1-->
+<section class="section pb-5 container" >
+    <br><br>
+    <!--Section heading-->
+    <h2 class="section-heading h1 pt-4">Contact us</h2>
+    <!--Section description-->
+    <h4 class="section-heading h5 pt-4">Please feel free to reach out to me</h4>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-5 mb-4">
+
+            <!--Form with header-->
+            <div class="card">
+
+                <div class="card-body">
+                    <!--Header-->
+                    <div class="form-header blue accent-1">
+                        <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+                    </div>
+
+                    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                      <!--Body-->
+                      <div class="md-form">
+                          <i class="fa fa-user prefix grey-text"></i>
+                          <input mdbActive type="text" id="form3" ngModel name="name" required class="form-control">
+                          <label for="form3">Your name</label>
+                      </div>
+
+                      <div class="md-form">
+                          <i class="fa fa-envelope prefix grey-text"></i>
+                          <input mdbActive type="text" id="form2" required class="form-control" ngModel #email="ngModel" name="email" email>
+                          <label for="form2">Your email</label>
+                      </div>
+
+                      <div class="md-form">
+                          <i class="fa fa-tag prefix grey-text"></i>
+                          <input mdbActive type="text" id="form32" required class="form-control" ngModel name="subject">
+                          <label for="form34">Subject</label>
+                      </div>
+
+                      <div class="md-form">
+                          <i class="fa fa-pencil prefix grey-text"></i>
+                          <textarea mdbActive type="text" id="form8" required class="md-textarea form-control" ngModel name="content"></textarea>
+                          <label for="form8">Your message</label>
+                      </div>
+
+                      <div class="text-center">
+                          <button type="submit" [disabled]="!f.valid" class="btn btn-elegant waves-light" mdbRippleRadius>Submit</button>
+                      </div>
+                    </form>
+                </div>
+
+            </div>
+            <!--Form with header-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7">
+
+            <!--Google map-->
+            <agm-map class="z-depth-1-half map-container" style="height: 400px;" [latitude]="map.lat" [longitude]="map.lng">
+                <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
+            </agm-map>
+
+            <br>
+            <!--Buttons-->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a class="btn-floating blue accent-1 waves-light" mdbRippleRadius><i class="fa fa-map-marker"></i></a>
+                    <p>Charlotte, NC 28262</p>
+                    <p>United States</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="btn-floating blue accent-1 waves-light" mdbRippleRadius><i class="fa fa-phone"></i></a>
+                    <p>+ 1 716 000 0000</p>
+                    <p>Mon - Fri, 11:00-22:00 EST</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="btn-floating blue accent-1 waves-light" mdbRippleRadius><i class="fa fa-envelope"></i></a>
+                    <p>xxx@yahoo.com</p>
+                </div>
+            </div>
+
+        </div>
+       <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.1-->
+            

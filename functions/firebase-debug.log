@@ -1,0 +1,25 @@
+[debug] [2017-12-31T19:31:06.146Z] ----------------------------------------------------------------------
+[debug] [2017-12-31T19:31:06.146Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KashishSyeda\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2017-12-31T19:31:06.146Z] CLI Version:   3.16.0
+[debug] [2017-12-31T19:31:06.146Z] Platform:      win32
+[debug] [2017-12-31T19:31:06.146Z] Node Version:  v8.1.1
+[debug] [2017-12-31T19:31:06.162Z] Time:          Sun Dec 31 2017 14:31:06 GMT-0500 (Eastern Standard Time)
+[debug] [2017-12-31T19:31:06.162Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-31T19:31:06.162Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-12-31T19:31:06.162Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Angular-Email-Form\mdb-angular-free
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
