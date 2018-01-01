@@ -56,7 +56,7 @@ messagingSenderId: "444457079657"
 }
 };
 ```
-#### Google Map integration and Setup####
+#### Google Map integration and Setup ####
 * Get your google maps api key from [here](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key) and paste it here in app.module.ts
 ```
 imports: [
