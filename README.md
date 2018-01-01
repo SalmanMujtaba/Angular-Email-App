@@ -13,7 +13,7 @@ The Angular 5 application is crafted to send an email via a contact form. This c
 ## Getting Started
 
 You can simply run npm install and start the application. However, the configuration would be specific to my requirement. You'll need
-to follow the steps below to tweek the page according to your needs.
+to follow the steps below to tweak the page according to your needs.
 
 ### Prerequisites
 #### Firebase Setup ####
@@ -31,7 +31,7 @@ messagingSenderId: "<SENDER_ID>",
 * Go to this [link](https://firebase.google.com/pricing/) and upgrade your firebase project to Spark(free).
 * Follow the [guide](https://firebase.google.com/docs/functions/get-started) to setup firebase project uptill(excluded):add the addMessage() function
 * If you get an error related to firebase-admin go ahead and install this in functions folder.
-* Also install [nodemailer](https://nodemailer.com/about/). Make sure you're in functions directory.
+* Also, install [nodemailer](https://nodemailer.com/about/). Make sure you're in functions directory.
 
 ```
 cd functions
@@ -42,7 +42,7 @@ npm install nodemailer
 
 #### Environment ####
 Not really a prerequisite, but it is related to the steps above
-*Go to src/environemnts/environment.ts and copy the snippet(config) which you had saved previously. It should finally look like this:
+*Go to src/environments/environment.ts and copy the snippet(config) which you had saved previously. It should finally look like this:
 ```
 export const environment = {
 production: false,
@@ -65,7 +65,7 @@ apiKey: 'your key here'
 })
 ],
 ```
-* Get your lattitude and longitude and paste it in contact.component.ts :
+* Get your latitude and longitude and paste it in contact.component.ts :
 ```
 public map: any = { lat: 35.330153, lng: -80.732529 };
 ```
