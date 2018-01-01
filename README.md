@@ -99,4 +99,6 @@ ng serve
 
 * https://medium.com/@markgoho/create-a-contact-form-in-angular-using-cloud-functions-for-firebase-5e390bdf5600
 
+## [Useful Link](https://www.linkedin.com/pulse/angular-5-email-form-salman-mujtaba/?published=t)
+
 ## Please go through the package.json files, and make sure you have the exact versions of the dependencies as mine. Hit me up for any queries!
