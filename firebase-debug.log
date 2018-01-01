@@ -1,0 +1,17 @@
+[debug] [2018-01-01T03:00:08.783Z] ----------------------------------------------------------------------
+[debug] [2018-01-01T03:00:08.785Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KashishSyeda\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-01-01T03:00:08.786Z] CLI Version:   3.16.0
+[debug] [2018-01-01T03:00:08.786Z] Platform:      win32
+[debug] [2018-01-01T03:00:08.786Z] Node Version:  v8.1.1
+[debug] [2018-01-01T03:00:08.787Z] Time:          Sun Dec 31 2017 22:00:08 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-01T03:00:08.787Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-01T03:00:08.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-01T03:00:08.802Z] > authorizing via signed-in user
+[debug] [2018-01-01T03:00:08.804Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/login-540f1  
+  
+ Sun Dec 31 2017 22:00:08 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-01T03:00:09.316Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-01T03:00:09.317Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/login-540f1/tokens  
+  
+ Sun Dec 31 2017 22:00:09 GMT-0500 (Eastern Standard Time)

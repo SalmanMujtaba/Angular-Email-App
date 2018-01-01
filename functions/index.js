@@ -17,14 +17,17 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
   }
   
   const val = snapshot.val();
-  
+
   const mailOptions = {
     to: val.email,
-    subject: `From ${val.name}: ${val.subject}`,
-    text: val.message
+    subject: 'Your message has been sent. Thank you.',
+    text: `Your message content. \n 
+          Subject: ${val.subject} \n 
+          Sender's Name: ${val.name} \n
+          Content: ${val.message}`
   };
   return mailTransport.sendMail(mailOptions).then(() => {
-    return console.log('Mail sent to: salman.mujtaba@yahoo.com');
+    return console.log('Mail sent'); //The log will be shown in Firebase.
   });
 });
 
