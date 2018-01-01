@@ -1,12 +1,12 @@
-# Angluar 5-Email-Form
+# Angular 5-Email-Form
 
-The Angular 5 application is crafted to send email via a contact form. This could be used be easily integrated into anyone's website.
+The Angular 5 application is crafted to send an email via a contact form. This could be used be easily integrated into anyone's website.
 
 ## Features:
-* UI is based on [Material Design for Boostrap!](https://mdbootstrap.com/angular)
+* UI is based on [Material Design for Bootstrap!](https://mdbootstrap.com/angular)
 * Google map integration.
 * Angular 5 form validation and quirks.
-* Firebase integration via (Cloud functions): Does not really require an explicit server like Node.js to send email.
+* Firebase integration via (Cloud functions): Does not really require an explicit server like Node.js to send an email.
 * Nodemailer
 * Please use firebase 4.8.0 version for this app
 
@@ -70,7 +70,7 @@ apiKey: 'your key here'
 public map: any = { lat: 35.330153, lng: -80.732529 };
 ```
 
-### General Guideline
+### General Guidelines
 #### Setup Sender's email address and password ####
 ```
 firebase functions:config:set gmail.email="myusername@gmail.com" gmail.password="secretpassword"
@@ -81,7 +81,7 @@ firebase functions:config:get
 ```
 It’ll return a .json-looking response with your current config.
 
-#### Deploy finction ####
+#### Deploy function ####
 * Send the function to firebase (command line)
 ```
 firebase deploy
