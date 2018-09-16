@@ -8,7 +8,7 @@ The Angular 5 application is crafted to send an email via a contact form. This c
 * Angular 5 form validation and quirks.
 * Firebase integration via (Cloud functions): Does not really require an explicit server like Node.js to send an email.
 * Nodemailer
-* Please use firebase 4.8.0 version for this app
+* Update#1: Latest version of firebase, that is 5.5.0, would work just as fine as the previous verions.
 
 ## Getting Started
 
@@ -94,6 +94,15 @@ Pull the project and do:
 npm install
 ng serve
 ```
+
+### Update#1
+* The firebase-admin and firebase-functions was updated for this project, to the latest versions. There is a slight change in how we access the **Realtime Database event** now. Please read the description related to **onWrite** from the link attached below.
+
+```
+"firebase-admin": "^6.0.0",
+"firebase-functions": "^2.0.5"
+```
+https://firebase.google.com/docs/functions/beta-v1-diff#realtime-database
 
 ## Acknowledgments
 
