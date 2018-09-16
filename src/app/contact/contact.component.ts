@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {AngularFireDatabase } from 'angularfire2/database';
 
@@ -7,18 +7,13 @@ import {AngularFireDatabase } from 'angularfire2/database';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
-  constructor(private af: AngularFireDatabase) {
-  }
-
-  ngOnInit() {
-  }
+  constructor(private af: AngularFireDatabase) {}
   
   public map: any = { lat: 35.330153, lng: -80.732529 };
 
   onSubmit(form: NgForm){
-    console.log(form);
     const value = form.value;
     const name = value.name;
     const email = value.email;

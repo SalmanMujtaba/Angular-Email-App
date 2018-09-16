@@ -21,35 +21,39 @@
                     </div>
 
                     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-                      <!--Body-->
-                      <div class="md-form">
-                          <i class="fa fa-user prefix grey-text"></i>
-                          <input mdbActive type="text" id="form3" ngModel name="name" required class="form-control">
-                          <label for="form3">Your name</label>
-                      </div>
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input mdbActive type="text" id="form3" ngModel name="name" required class="form-control">
+                            <label for="form3">Your name</label>
+                        </div>
 
-                      <div class="md-form">
-                          <i class="fa fa-envelope prefix grey-text"></i>
-                          <input mdbActive type="text" id="form2" required class="form-control" ngModel #email="ngModel" name="email" email>
-                          <label for="form2">Your email</label>
-                      </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input mdbActive type="text" id="form2" required class="form-control" ngModel #email="ngModel" name="email" email>
+                            <label for="form2">Your email</label>
+                        </div>
 
-                      <div class="md-form">
-                          <i class="fa fa-tag prefix grey-text"></i>
-                          <input mdbActive type="text" id="form32" required class="form-control" ngModel name="subject">
-                          <label for="form34">Subject</label>
-                      </div>
+                        <div class="md-form">
+                            <i class="fa fa-tag prefix grey-text"></i>
+                            <input mdbActive type="text" id="form32" required class="form-control" ngModel name="subject">
+                            <label for="form34">Subject</label>
+                        </div>
 
-                      <div class="md-form">
-                          <i class="fa fa-pencil prefix grey-text"></i>
-                          <textarea mdbActive type="text" id="form8" required class="md-textarea form-control" ngModel name="content"></textarea>
-                          <label for="form8">Your message</label>
-                      </div>
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix grey-text"></i>
+                            <textarea mdbActive type="text" id="form8" required class="md-textarea form-control" ngModel name="content"></textarea>
+                            <label for="form8">Icon Prefix</label>
+                        </div>
 
-                      <div class="text-center">
-                          <button type="submit" [disabled]="!f.valid" class="btn btn-elegant waves-light" mdbRippleRadius>Submit</button>
-                      </div>
-                    </form>
+                        <div class="text-center">
+                            <button type="submit" 
+                                    (click)="showSuccess()" 
+                                    [disabled]="!f.valid"
+                                    class="btn btn-elegant waves-light" 
+                                    mdbRippleRadius>Submit</button>
+                        </div>
+                      </form>
                 </div>
 
             </div>
